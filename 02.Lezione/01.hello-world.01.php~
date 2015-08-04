@@ -1,0 +1,7 @@
+<?php
+
+// Non poteva mancare Hello World
+
+$name = 'giancarlo';
+
+echo "Hello " . $name;
