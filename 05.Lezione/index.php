@@ -2,18 +2,21 @@
 
 require __DIR__ . '/../vendor/autoload.php';
 
+// L'utilizzo di altri Componenti
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
+// Avviamo l'applicazione
 $app = new Silex\Application();
 
+// Creazione dell'Hompage
 $app->get('/', function () {
 	return "Hello World";
 });
 
 $app->get('/hello/{name}', function ($name) {
 	return "Hello " . ucfirst($name) . "!";
-});
+})->bind('saluti');
 
 // Esempio di Post
 
@@ -26,8 +29,8 @@ $app->match('/form', function(Request $request) {
 	}
 	
 	return new Response($own_response, 201);
-	return ;
-});
+	
+})->bind('nostro_form');
 
 
 $app->run();
