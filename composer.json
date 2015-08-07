@@ -1,0 +1,8 @@
+{
+    "name": "upter/php-school-it",
+    "description": "Project to learn Php in an Italian low cost school",
+    "require": {
+        "php": ">=5.4.0",
+        "silex/silex": "1.3.*"
+    }
+}
