@@ -1,6 +1,15 @@
 {
     "name": "upter/php-school-it",
     "description": "Project to learn Php in an Italian low cost school",
+    "version": "0.0.1-dev",
+    "authors": [
+        {
+            "name": "Giorgio Tedesco",
+            "email": "gt@giorgiotedesco.it",
+            "homepage": "http://www.giorgiotedesco.it",
+            "role": "Developer"
+        }
+    ],
     "require": {
         "php": ">=5.4.0",
         "silex/silex": "1.3.*"
